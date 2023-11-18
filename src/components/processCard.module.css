@@ -1,0 +1,25 @@
+.processContainer{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    max-width: 20rem;
+    min-width: 12rem;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    background-color: white;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    gap: 12px;
+    border: 1px solid gray;
+    padding: 12px;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    gap:10px
+}
+
+.processContainer span{
+    color: black;
+}

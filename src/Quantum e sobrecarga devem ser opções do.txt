@@ -1,0 +1,28 @@
+Quantum e sobrecarga devem ser opções do processador e não de cada processo -> alterado
+
+Implementa lógica para que o escalonador funcione melhor
+
+
+Implementar função de criar processos novos
+    para isso devemos setar um useState para acumular um array com os objetos de cada processos
+
+
+Implementar depois a seleção de cada algoritimo de escalonamento
+    Algoritimo para criação da parte grafica
+    Criar o componente da parte gráfica
+
+
+Implementar o algoritimo de gestão de memoria
+    Algoritimo para implementar a parte grafica da memória
+    Criar o componente da parte gráfica
+
+
+Separar a memória entre disco e RAM
+
+
+
+
+
+
+
+
