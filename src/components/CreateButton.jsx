@@ -12,7 +12,13 @@ export function CreateProcessButton() {
 
 		setProcesses([
 			...processes,
-			{ id: count, duration: 0, value2: 0, valor3: 0, valor4: 0 },
+			{
+				id: count,
+				duration: 0,
+				priority: 0,
+				arrivalTime: 0,
+				pagesNumber: 0,
+			},
 		]);
 	}
 

@@ -13,6 +13,14 @@ export default function ProcessInput({ name, id, type }) {
 		switch (type) {
 			case "duration":
 				newArray[index].duration = e.target.value;
+			case "priority":
+				newArray[index].priority = e.target.value;
+			case "arrivalTime":
+				newArray[index].arrivalTime = e.target.value;
+			case "pagesNumber":
+				newArray[index].pagesNumber = e.target.value;
+			case "deadline":
+				newArray[index].pagesNumber = e.target.value;
 		}
 		setProcesses(newArray);
 	}

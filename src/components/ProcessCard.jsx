@@ -16,17 +16,33 @@ export default function ProcessCard(props) {
 
 			<div className={styles.box}>
 				<ProcessInput
-					name={"Tempo de Chegada"}
-					s
+					name={"Duração"}
 					id={props.id}
 					type={"duration"}
 				/>
 
-				<ProcessInput name={"Deadline"} id={props.id} />
+				<ProcessInput
+					name={"Deadline"}
+					id={props.id}
+					type={"deadline"}
+				/>
 			</div>
 			<div className={styles.box}>
-				<ProcessInput name={"Prioridade"} id={props.id} />
-				<ProcessInput name={"Tempo de Execução"} id={props.id} />
+				<ProcessInput
+					name={"Prioridade"}
+					id={props.id}
+					type={"priority"}
+				/>
+				<ProcessInput
+					name={"Páginas"}
+					id={props.id}
+					type={"pagesNumber"}
+				/>
+				<ProcessInput
+					name={"Chegada"}
+					id={props.id}
+					type={"arrivalTime"}
+				/>
 			</div>
 		</div>
 	);
