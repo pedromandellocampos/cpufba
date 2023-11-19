@@ -1,15 +1,29 @@
-import { Button } from "@mui/material"
+import { Button } from "@mui/material";
+import { useContext } from "react";
+import UserContext from "../context/UseContext";
 
+export function CreateProcessButton() {
+	const { count, setCount, processes, setProcesses } =
+		useContext(UserContext);
 
+	function handleCreateProcess() {
+		console.log("teste");
+		setCount(count + 1);
 
-function handleCreateProcess(){
-    console.log("teste")
-   // setProcesses =[...getProcesses, {quantum: 0, valor2: 0, valor3:0, valor4:0}]
+		setProcesses([
+			...processes,
+			{ id: count, duration: 0, value2: 0, valor3: 0, valor4: 0 },
+		]);
+	}
 
-}
-
-export function CreateProcessButton(){
-    return(<Button onClick={() => {
-        handleCreateProcess();
-      }} variant="contained">Criar Processo</Button>);
+	return (
+		<Button
+			onClick={() => {
+				handleCreateProcess();
+			}}
+			variant="contained"
+		>
+			Criar Processo
+		</Button>
+	);
 }
