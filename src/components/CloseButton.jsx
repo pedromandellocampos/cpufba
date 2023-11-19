@@ -10,7 +10,7 @@ export function CloseButton(props) {
 		let newArray = processes;
 		let index = newArray.findIndex((objeto) => objeto.id === props.id);
 		newArray.splice(index, 1);
-		setProcesses(newArray);
+		setProcesses([...newArray]);
 	}
 
 	return (
