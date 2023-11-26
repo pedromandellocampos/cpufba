@@ -1,0 +1,21 @@
+.matrixItem {
+	height: 2px;
+	width: 2px;
+	border-radius: 1px;
+}
+
+.processing {
+	background-color: blue;
+}
+
+.processed {
+	background-color: green;
+}
+
+.awaiting {
+	background-color: yellow;
+}
+
+.none {
+	background-color: lightgray;
+}
